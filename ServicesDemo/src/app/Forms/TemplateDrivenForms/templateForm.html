@@ -1,0 +1,10 @@
+<form name="form" (ngSubmit)="onSubmit()" #f="ngForm">
+        <label for="productName">Product Name</label>
+        <input type="text"  [(ngModel)]="productName" name="productName" required />
+
+
+        <label for="productPrice">Product Price</label>
+        <input type="text" name="productPrice" [(ngModel)]="productPrice" required />
+
+        <button >Save</button>
+</form>

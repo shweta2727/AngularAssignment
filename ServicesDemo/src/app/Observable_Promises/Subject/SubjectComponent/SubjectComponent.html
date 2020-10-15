@@ -1,0 +1,10 @@
+<div>
+    <button (click)="updateMessage('Button Clicked')">Set Message</button>
+    {{message}}
+    <!--When message is updated from another component also, its updated here in case of Subject-->
+</div>
+<div>
+    {{status}}
+    <!--When status is update from another component also, its not updated here in case of BehaviorSubject-->
+</div>
+<app-behaviorsubjectservice></app-behaviorsubjectservice>

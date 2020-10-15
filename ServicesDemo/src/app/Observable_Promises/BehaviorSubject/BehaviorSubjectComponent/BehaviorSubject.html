@@ -1,0 +1,12 @@
+<div>
+    {{status}} 
+    <button (click)="updateStatus('Active')">Set Status to Active</button>
+ <!--When status is updated from another component also, its not updated here in case of BehaviorSubject-->
+  <br>
+  <button (click)="updateStatus('Inactive')">Set Status to InActive</button>
+ 
+</div>
+<div>
+    {{message}}
+    <!--When message is updated from another component also, its updated here in case of Subject-->
+</div>
